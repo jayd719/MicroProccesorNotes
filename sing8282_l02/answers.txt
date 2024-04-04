@@ -1,0 +1,52 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Jashandeep Singh
+ID:      169018282
+Email:   sing8282@mylaurier.ca
+Date:    1 February  2024
+-------------------------------------------------------
+Answers for Lab 2
+-------------------------------------------------------
+>> indicates changed
+
+Task 1
+ldr r3, A; >> ldr r3, =A;
+ldr r3, B: >> ldr r3, =B;
+add r2, r1, [r0] >> add r2, r1, r0
+
+After making the changes program executes as intended
+
+Task 2
+
+ldr r3, =First >> ldr r3, =First;
+
+ldr r3, =Second >> ldr r3, =Second;
+
+ldr r3, =Total >> ldr r3, =Total;
+
+ldr r3, =Difff >> ldr r3, =Diff;
+
+str r2, r3 >> str r2, [r3] 
+
+
+Task 3
+
+ldr r0, =Vec1  >> ldr r0, =Vec1;
+ldr r1, =Vec2  >> ldr r1, =Vec2;
+add r0, r0, #2  >> add r0, r0, #4
+add r1, r1, #2  >> add r1, r1, #0000 
+
+
+add r1, r1, #4  >> add r0, r0, #4
+add r1, r1, #4  >> add r1, r1, #0000 
+
+.bss // Uninitialized data section
+Vec2:
+.word 6 >> 
+
+Vec2:
+.space 4 // Set aside 4 bytes for result
+
+
+

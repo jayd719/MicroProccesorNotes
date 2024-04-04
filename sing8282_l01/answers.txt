@@ -1,0 +1,24 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Jashandeep Singh
+ID:      169018282
+Email:   sing8282@mylaurier.ca
+Date:    22 January 2024
+-------------------------------------------------------
+Answers for Lab 1
+-------------------------------------------------------
+
+Task 1
+No, it does not change behaviour of the program. Program still produces the same output after executing that is hexadecimal value of 00000017
+
+
+Task 2
+Yes, it is legal to do so. Compiler complies the given instructions 
+	add r3, r3,r3
+And after executing value of r3 is updated to sum of original of r3.
+
+
+Task 3
+The compiler fails to compile the code when attempting to add to immediate values 4 and 5. So, it is illegal to add two immediate values.
+When the middle operand is replaced with a register, code is successfully complied and sum is successfully calculated after execution.

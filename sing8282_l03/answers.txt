@@ -1,0 +1,20 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Jashandeep Singh
+ID:      169018282
+Email:   sing8282@mylaurier.ca
+Date:    9 February 2024
+-------------------------------------------------------
+Answers for Lab 3
+-------------------------------------------------------
+
+Task 1
+After changing the command to gte, after the loop values in r3 is ffffffff in hexadecimal  and -1 in signed decimal. 
+
+
+Task 2
+Address of COUNTER in HEXADECIMAL is 00001020
+
+
+Task 3

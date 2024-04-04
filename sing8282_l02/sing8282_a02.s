@@ -1,0 +1,33 @@
+.equ startingAddress, 0x1000
+
+.text
+.global _start
+_start:
+
+
+LDR R1,=startingAddress
+LDR R2,=Data
+LDR R3,=_Data
+Loop:
+	
+	LDR R0,[R2],#4
+	
+	STRB R0,[R1],#1
+	CMP r3, r2
+	BNE Loop
+
+
+
+
+_stop:
+b _stop
+
+.data
+
+.align
+Data:
+.word 0xA,0xB,0xC,0x1,0x2,0x4,0x9,0x3
+.word 0xD,0xF,0xE,0x7,0x5,0x6,0x8,0x0
+_Data:
+
+.end
